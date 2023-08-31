@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    background: #E1EDE6;
+    height: 100px;
+}
+
+.all_navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    margin: auto;
+    padding-top: 33px;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.menu {
+    align-self: center;
+}
+
+.burg_menu {
+    display: none;
+}
+
+.menu_ul {
+    display: flex;
+    gap: 60px;
+}
+
+.menu_ul li {
+    list-style: none;
+}
+
+.part_menu {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #2C2D35;
+    font-size: 20px;
+}
+
+.part_menu:hover {
+    color: #598D66;
+    transition: 0.5s;
+}
+
+.basket {
+    cursor: pointer;
+}
+
+.logo_name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #598D66;
+    font-size: 20px;
+}
+
+.about {
+    display: flex;
+    gap: 30px;
+    width: 77%;
+    margin: auto;
+}
+
+.main_imag {
+    width: 50%;
+    object-fit: contain;
+}
+
+.text_and_btn {
+    align-self: center;
+}
+
+h1 {
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+h1 span {
+    color: #598D66;
+}
+
+.deskription {
+    color: #86928B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding-bottom: 60px;
+}
+
+.btn {
+    display: flex;
+    height: 65px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #598D66;
+    background: none;
+    cursor: pointer;
+
+    color: #598D66;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: #376B44;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.title_and_countries {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.title_reproduction {
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.countries {
+    display: flex;
+    gap: 32px;
+}
+
+.country {
+    list-style: none;
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+
+    border-radius: 20px;
+    background: #D4E8D9;
+    padding: 10px 20px;
+}
+
+.country:hover {
+    background: #376B44;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.all_reproductions {
+    width: 77%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.reproduction {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    background: #E1EDE6;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.repr_img {
+    width: 100%;
+}
+
+.autor {
+    color: #86928B;
+    font-family: inherit;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+.img_name {
+    color: #2C2D35;
+    font-family: inherit;
+    font-size: 30px;
+    padding-bottom: 8px;
+}
+
+.repr_size {
+    color: #2C2D35;
+    font-family: inherit;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.repr_price {
+    color: #598D66;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.reproduction button {
+    width: 100%;
+}
+
+.new_collection {
+    background-image: url(images/newbies-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 70px;
+}
+
+.new_collection::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0), rgb(0, 0, 0));;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.aside_container {
+    width: 77%;
+    margin: auto;
+    z-index: 3;
+    position: relative;
+}
+
+.all_content_new_collection {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.logo_title {
+    display: flex;
+    align-items: center;
+}
+
+.logo_title svg {
+    height: 130px;
+}
+
+.logo_title h3 {
+    color: #F4F6F5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.all_content_new_collection p {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.btn_more {
+    height: 65px;
+    padding: 20px 60px;
+    background: #EEDB6D;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.img_and_about_team {
+    width: 77%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.frame {
+    height: 440px;
+    width: 50%;
+    object-fit: contain;
+}
+
+.about_team {
+    align-self: center;
+}
+
+.about_team h3 {
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.about_team p {
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.people {
+    display: flex;
+    gap: 30px;
+}
+
+.employee {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+footer {
+    background: #E1EDE6;
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.footer_container {
+    width: 77%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tel, .name_category {
+    color: #2C2D35;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+
+.tel {
+    cursor: pointer;
+}
+
+.master, .category {
+    color: #86928B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.category:hover, .tel:hover {
+    color: #598D66;
+    transition: 0.5s;
+}
+
+.categories_and_sites {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.nav_of_footer {
+    display: flex;
+    gap: 60px;
+}
+
+.logo_and_tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.all_socials {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.copiright span {
+    color: #86928B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+
+@media (max-width: 1100px) {
+    .burg_menu {
+        display: none;
+    }
+    .all_navigation, .about, .title_and_countries, .all_reproductions, .aside_container, .img_and_about_team, .footer_container {
+        width: 88%;
+    }
+    .about {
+        padding-top: 30px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .deskription {
+        padding-bottom: 30px;
+    }
+    .country {
+        font-size: 18px;
+    }
+    .reproduction {
+        width: calc(50% - 15px);
+    }
+    .all_content_new_collection {
+        width: 100%;
+    }
+    .part_menu {
+        font-size: 18px;
+    }
+    .title_reproduction {
+        font-size: 30px;
+    }
+    .img_and_about_team {
+        flex-direction: column;
+    }
+    .frame {
+        width: 80%;
+    }
+    .footer_container {
+        flex-direction: column;
+    }
+    .logo_and_tel {
+        flex-direction: row;
+        padding-bottom: 30px;
+    }
+    .nav_of_footer {
+        gap: 30px;
+    }
+    .categories_and_sites {
+        width: 100%;
+    }
+}
+
+@media (max-width: 689px) {
+    .all_navigation {
+        flex-direction: column;
+    }
+    nav {
+        height: auto;
+    }
+    .burg_menu {
+        display: none;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .deskription {
+        font-size: 16px;
+    }
+    .btn {
+        height: 50px;
+    }
+    .logo {
+        align-self: center;
+        padding-bottom: 20px;
+    }
+    .logo_title h3 {
+        font-size: 24px;
+    }
+    .main_imag {
+        width: 40%;
+    }
+    .all_content_new_collection p {
+        font-size: 16px;
+    }
+    .logo_title svg {
+        width: 50px;
+    }
+    .autor {
+        font-size: 16px;
+    }
+    .img_name {
+        font-size: 24px;
+    }
+    .repr_size {
+        font-size: 16px;
+    }
+    .repr_price {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 18px;
+    }
+    .menu {
+        border-top: 2px solid #C3D1C6;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .title_and_countries {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .categories_and_sites {
+        flex-direction: column;
+    }
+    .sicials_and_copiright {
+        align-self: center;
+        padding-top: 20px;
+    }
+    .nav_of_footer {
+        justify-content: space-between;
+        border-bottom: 2px solid #C3D1C6;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    nav {
+        background-color: #FFF;
+    }
+    .burg_menu {
+        display: block;
+        cursor: pointer;
+    }
+    .menu_ul {
+        justify-content: space-between;
+        gap: 0;
+        width: 88%;
+        margin: auto;
+    }
+    .all_navigation {
+        width: 100%;
+    }
+    .part_menu{
+        display: none;
+    }
+    .menu {
+        border: none;
+        background-color: #D4E8D9;
+    }
+    .all_navigation .logo {
+        background-color: #FFF;
+    }
+    .main_imag {
+        display: none;
+    }
+    .countries {
+        overflow:scroll;
+    }
+    .reproduction {
+        width: 100%;
+    }
+    .frame {
+        height: auto;
+    }
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo_and_tel {
+        flex-direction: column;
+    }
+    .categories_and_sites {
+        flex-direction: column;
+    }
+    .nav_of_footer {
+        flex-wrap: wrap;
+    }
+    
+}
+
